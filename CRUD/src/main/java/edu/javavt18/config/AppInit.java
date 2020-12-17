@@ -3,6 +3,8 @@ package edu.javavt18.config;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class AppInit extends AbstractAnnotationConfigDispatcherServletInitializer {
+
+
     // Этот метод должен содержать конфигурации которые инициализируют Beans
     // для инициализации бинов у нас использовалась аннотация @Bean
     @Override
@@ -15,7 +17,6 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     // Тут добавляем конфигурацию, в которой инициализируем ViewResolver
     @Override
     protected Class<?>[] getServletConfigClasses() {
-
         return new Class<?>[]{
                 WebConfig.class
         };
@@ -25,5 +26,4 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
-
 }
