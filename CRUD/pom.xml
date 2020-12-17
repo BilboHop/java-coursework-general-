@@ -12,6 +12,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>4.2.1.RELEASE</spring.version>
         <hibernate.version>4.2.5.Final</hibernate.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mysql.connector.version>5.1.31</mysql.connector.version>
         <jpa.version>1.0.0.Final</jpa.version>
     </properties>
@@ -24,6 +25,7 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>${spring.version}</version>
+
         </dependency>
 
         <dependency>
